@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class Warrior extends Hero {
+    public Warrior(int damage, int health, String superAbilityType) {
+        super(damage, health, superAbilityType);
+    }
 
-public class Warrior {
+    @Override
+    public void applySuperAbility() {
+        System.out.println("Warrior применил супер способность CRITICAL DAMAGE");
+    }
 }
